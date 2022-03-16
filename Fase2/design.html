@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Proyecto de sitio Web 2022 - II</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--Navbar desplegable-->
+    <div style="height: 100vh; width: 100%; display: flex; flex-direction: column;">
+        <div class="topnav" id="myTopnav">
+            <a href="design.html">Inicio</a>
+            <div class="dropdown">
+                <button class="dropbtn">Temas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Tema 1</a></li>
+                        <li><a href="#">Tema 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Recursos Digitales
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Recurso 1</a></li>
+                        <li><a href="#">Recurso 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Aprendizaje
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Actividad 1</a></li>
+                        <li><a href="#">Actividad 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Acerca de
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Autor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <!--Contenido-->
+        <div class="contenido">
+            <section>
+                <h3>
+                    <li>Proposito del Sitio</li>
+                </h3>
+                <p>
+                    La siguiente pagina tiene como proposito dar a conocer los temas que son: Flex Box, Listas y
+                    enlaces, donde se mostrar la ultidad que tienen las listas y Enlaces en el diseño web.
+                    Ademas de como funcionan los flexbox, ya que estos son una forma de organizar los elementos en una
+                    pagina web.
+                </p>
+            </section>
+            <article>
+                <div>
+                    <h3>
+                        <li>¿Qué Flexbox?</li>
+                    </h3>
+                    <p>
+                        Flexbox es un método de diseño de página unidimensional para compaginar elementos en filas o
+                        columnas. Los elementos de contenido se ensanchan para rellenar el espacio adicional y se
+                        encogen para caber en espacios más pequeños.
+                    </p>
+                    <h3>Modelos Flexbox</h3>
+                    <img src="flex_terms.png" alt="HTML5"
+                        style="width: 50%; height: 50%; min-width: 450px; min-height: 400px;"> </img>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <h3>
+                        <li>Listas</li>
+                    </h3>
+                    <p>
+                        Las listas en HTML ordenadas son aquellas que nos muestran los elementos de la lista en orden.
+                        Para representar el orden tendremos los elementos numerados. Es decir, cada uno de los elementos
+                        irá precedido de un número o letra que establezca su orden
+                    </p>
+                    <p>Cada uno de los elementos de la lista ordenada se representará mediante el elemento LI.</p>
+                    <span>&lt;ul&gt;</span>
+                    <p><span>&nbsp; &lt;li&gt;Elemento 1&lt;/li&gt;</span></p>
+                    <p><span>&nbsp; &lt;li&gt;Elemento 2&lt;/li&gt;</span></p>
+                    <span>&lt;ul&gt;</span>
+                    <h3>
+                        <li>Enlaces</li>
+                    </h3>
+                    <p>Antes de crear enlaces en HTML debemos de tener presente que es una URL y cuáles son sus partes.
+                        URL son las siglas en inglés de Uniform Resource Locator, que en español significa Localizador
+                        Uniforme de Recursos.</p>
+
+                    <p>
+                        En HTML los enlaces se marcan con la etiqueta &lt;a&gt;&lt;/a&gt; y el atributo principal es
+                        href="/" donde se escribe la ubicación del archivo de destino que puede estar en la misma
+                        carpeta que el archivo que lo está llamando, en otra carpeta del mismo sitio o en otro sitio
+                        web.
+                    </p>
+                    <h4>Ejemplo</h4>
+                    <span style="font-size: 14pt;">&lt;a href="/contacto.html"&gt;Contáctenos&lt;/a&gt;.</span>
+                    <h2>
+                        <li>Referencias</li>
+                    </h2>
+                    <li>
+                        <a
+                            href="https://www.itecad.com/nuestro-blog/164-desarrollo-web/350-como-insertar-elementos-de-texto-enlaces-vinculos-y-listas-en-una-pagina-html#:~:text=Las%20listas%20en%20HTML%20ordenadas,representan%20mediante%20el%20elemento%20OL">(2022).
+                            Recuperado 16 de marzo de 2022, de
+                            itecad website:
+                            https://www.itecad.com/nuestro-blog/164-desarrollo-web/350-como-insertar-elementos-de-texto-enlaces-vinculos-y-listas-en-una-pagina-html#:~:text=Las%20listas%20en%20HTML%20ordenadas,representan%20mediante%20el%20elemento%20OL.
+                            <a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox ">(2022).
+                            (2022). Recuperado 16 de marzo de 2022, de mozilla website:
+                            https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox
+                            <a>
+                    </li>
+
+                </div>
+            </article>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div style="display: inline-block; padding: 5px;">
+                <p>
+                    JOSUE IGNACIO OCHOA TORRES
+                    &nbsp
+                    &nbsp
+                    Skype: josue.ochoa.torres
+                    &nbsp
+                    &nbsp
+                    <span id="datetime"></span>
+                </p>
+                <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+
+                </script>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
