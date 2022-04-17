@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Proyecto de sitio Web 2022 - II</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--Navbar desplegable-->
+    <div style="height: 100vh; width: 100%; display: flex; flex-direction: column;">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Inicio</a>
+            <div class="dropdown">
+                <button class="dropbtn">Temas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Tema 1</a></li>
+                        <li><a href="formTema2.html">Tema 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Recursos Digitales
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="formRecurso1.html">Recurso 1</a></li>
+                        <li><a href="formRecurso2.html">Recurso 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Aprendizaje
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Actividad 1</a></li>
+                        <li><a href="#">Actividad 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Acerca de
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Autor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <!--Contenido-->
+        <div class="contenido">
+            <div class="card" style="align-self: center; display: flex;">
+                <div style="background-color: #f44336; border-radius: 15px 0px 0px 15px; height: 300px; width: 300px; display: flex;">
+                    <img src="Jhonathan.jpg" width="80%" height="80%"
+                    style="align-items: center; display: block; margin-left: auto; margin-right: auto; align-self: center; border-radius: 50%;">
+                </div>
+                <div class="container">
+                    <h2><b>Jhonathan Andres Varon Cuellar</b></h2>
+                    
+                    <ul>
+                        <li><b>Codigo:</b><a> 1006514394</a></li>
+                        <li><b>Programa:</b><a> Ingenieria de Sistemas</a></li>
+                        <li><b>Correo:</b><a> jhonatanvaron9@gmail.com</a></li>
+                        <li><b>Usuario Skype:</b><a> j.andres10-02</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <footer class="footer">
+            <div style="display: inline-block; padding: 5px;">
+                <p>
+                    JOSUE IGNACIO OCHOA TORRES
+                    &nbsp
+                    &nbsp
+                    Skype: josue.ochoa.torres
+                    &nbsp
+                    &nbsp
+                    <span id="datetime"></span>
+                </p>
+                <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleDateString("es-CO");
+
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+
+                </script>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
