@@ -1,0 +1,138 @@
+<html lang="es-ES">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Proyecto de sitio Web 2022 - II</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--Navbar desplegable-->
+    <div style="height: 100vh; width: 100%; display: flex; flex-direction: column;">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Inicio</a>
+            <div class="dropdown">
+                <button class="dropbtn">Temas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="formTema1.html">Tema 1</a></li>
+                        <li><a href="formTema2.html">Tema 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Recursos Digitales
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="formRecurso1.html">Recurso 1</a></li>
+                        <li><a href="formRecurso2.html">Recurso 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Aprendizaje
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="formAprendizaje1.html">Actividad 1</a></li>
+                        <li><a href="formAprendizaje2.html">Actividad 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Acerca de
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="formAutor.html">Autor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <!--Contenido-->
+        <div class="contenido">
+            <div>
+                <h3>Propósito</h3>
+                <p>
+                    <!--Propisito de los Flex Box, Listas y enlaces-->
+                    La siguiente pagina tiene como proposito dar a conocer los temas que son: Flex Box, Listas y
+                    enlaces, donde se mostrar la ultidad que tienen las listas y Enlaces en el diseño web.
+                    Ademas de como funcionan los flexbox, ya que estos son una forma de organizar los elementos en una
+                    pagina web.
+                </p>
+            </div>
+            <div>
+                <h3>Introducción</h3>
+                <p>
+                    En el siguiente sitio web vamos a encontrar que son los Flex Box, Listas y enlaces, que son algunos
+                    conceptos y etiquetas que se utilizan en el maquetado de un sitio web, todo esto para que el
+                    aprendizaje de estos temas sean mas faciles y dinamicos.
+                </p>
+            </div>
+            <div>
+                <h1>Flex Box</h1>
+                <img src="flex_terms.png" alt="HTML5"
+                    style="width: 50%; height: 50%; min-width: 450px; min-height: 400px;"> </img>
+            </div>
+            <div>
+                <h1>Listas y enlaces</h1>
+                <img src="enlaces.png" alt="HTML5"
+                    style="width: 50%; height: 50%; min-width: 200px; min-height: 150px;"> </img>
+                <img src="listas.jpg" alt="HTML5" style="width: 50%; height: 50%; min-width: 300px; min-height: 300px;">
+                </img>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <aside style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <h1>Timeline Facebook UNAD</h1>
+                <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </aside>
+        </div>
+        <!--Footer-->
+        <footer class="footer">
+            <div style="display: inline-block; padding: 5px;">
+                <p>
+                    JOSUE IGNACIO OCHOA TORRES
+                    &nbsp
+                    &nbsp
+                    Skype: josue.ochoa.torres
+                    &nbsp
+                    &nbsp
+                    <span id="datetime"></span>
+                </p>
+                <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleDateString("es-CO");
+
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+
+                </script>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
